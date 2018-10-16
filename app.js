@@ -41,7 +41,7 @@ function findAvg(a, b) {
 
 //expected result:  hoist function first then call function and store in a global variable
 
-
+//nested function
 let fruits = [
     'bananas',
     'strawberries',
@@ -68,15 +68,20 @@ function getFruit() {
 
 getFruit();
 
-
+//function declaration where function can be invoked before function.
 sayHi('Paula');
 
 function sayHi(name) {
     console.log(`Hello, ${name}`);
 }
 
+//functional expression.  invoke function after or error will occur.
+let h = function hi() {
+    alert('hello function expression!!');
 
+};
 
+h();
 
 
 
